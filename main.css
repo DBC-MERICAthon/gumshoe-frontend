@@ -1,5 +1,40 @@
-#title-container {
-  color: white;
-  background-color: blue; }
+* {
+  /*border: 1px solid red;*/ }
+
+.wrapper {
+  background-color: #284A32;
+  height: 100vh; }
+
+.content-wrapper {
+  position: absolute;
+  top: 25%;
+  height: 100%;
+  width: 100%; }
+
+.title-container h1 {
+  color: #BDB682;
+  text-align: center; }
+
+.input-group {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto; }
+  .input-group #custom-search-input {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0; }
+    .input-group #custom-search-input .search-query {
+      left: 15px;
+      border-radius: 15px; }
+    .input-group #custom-search-input button {
+      border: 0;
+      background: none;
+      padding: 2px 5px;
+      margin-top: 2px;
+      position: relative;
+      left: -23px;
+      margin-bottom: 0;
+      color: #284A32;
+      z-index: 10; }
 
 /*# sourceMappingURL=main.css.map */
