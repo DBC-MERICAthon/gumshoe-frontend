@@ -1,6 +1,6 @@
 var stephanie=[]
 var xander = []
-var maps = {}
+var dataObj = {}
 var fullClient = retinaSDK.FullClient("9d562520-d285-11e5-8378-4dad29be0fab")
 var liteClient = retinaSDK.LiteClient("9d562520-d285-11e5-8378-4dad29be0fab")
 $(document).ready(function(){
@@ -45,7 +45,7 @@ function compare(){
   // $.get("scraped/XPSON.json", function(response){
     // response["results"]["collection1"].map( tweet => xander.push(tweet["twitter"]))
     fullClient.compareImage({expressions: [{"text": stephanie.join(" ")}, {"text": xander.join(" ")}]}, function(img){
-      maps.comparison = img
+      dataObj.comparison = img
     })
   // })
 }
@@ -112,10 +112,10 @@ function getSMHmap(){
 }
 
 function addToMapsX(img){
-    maps.xander = img
+    dataObj.xander = img
 }
 function addToMapsS(img){
-    maps.stephanie = img
+    dataObj.stephanie = img
 }
 
 function compareBulk(){
@@ -135,9 +135,9 @@ function compareBulk(){
 }
 
 function addAllImgs(){
-  appendImg(maps.xander)
-  appendImg(maps.stephanie)
-  appendImg(maps.comparison)
+  appendImg(dataObj.xander)
+  appendImg(dataObj.stephanie)
+  appendImg(dataObj.comparison)
 }
 
 
