@@ -1,3 +1,7 @@
+* {
+   border: 1px solid red;
+}
+
 .wrapper {
   background-color: #6cadd3;
   min-height: 100%;
@@ -37,6 +41,10 @@
   max-width: 30%;
   height: auto; }
 
+.container {
+  margin: 0 auto;
+}
+
 #results {
   display: none; }
 
@@ -53,9 +61,17 @@
   margin: 25px auto 0;
   font-weight: 400;
   padding: 30px;
-  background: #222222;
-  /* for IE */
-  background: rgba(34, 34, 34, 0.75); }
+  }
+
+  .results-circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  }
+
+  .fingerprint-image {
+    display: center;
+  }
 
 #your-results {
   max-width: 50%;
