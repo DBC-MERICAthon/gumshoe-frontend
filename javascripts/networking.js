@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	setTimeout(loadTerms, 200);
-  $('body').on('click', '#cortical-button', function(e){
+  $('body').on('click', '#cortical-button-search', function(e){
     e.preventDefault();
-    rotateAnimation("cortical-button",1,0);
+    rotateAnimation("cortical-button-search",1,0);
     setTimeout(loadDigitalPrint, 3000);
   });
 });
@@ -23,11 +23,6 @@ function loadTerms(){
   }
 }
 
-
-$(document).ready(function(){
-
-  });
-});
 
 function rotateAnimation(el,speed,degrees){
   var elem = document.getElementById(el);
