@@ -64,3 +64,44 @@ $background: #284A32;
 		margin-left: 20px;
 	}
 }
+
+
+.row {
+
+}
+
+#results-view {
+ display: none;
+ color: white;
+ max-width: 85%;
+ max-width: 950px;
+ margin: auto;
+ padding: 15px;
+ height: 500px;
+ opacity: 1 !important;
+ position: relative;
+ margin: 25px auto 0;
+ font-weight: 400;
+ padding: 30px;
+ background: rgb(34,34,34); /* for IE */
+ background: rgba(34,34,34,0.75);
+}
+
+#your-results {
+max-width: 50%;
+float: left;
+}
+
+#match-results {
+  max-width: 50%;
+  float: right;
+}
+
+.search-results {
+
+}
+
+.result-images {
+
+
+}
