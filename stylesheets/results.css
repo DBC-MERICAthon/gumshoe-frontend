@@ -16,7 +16,7 @@
 #center-div #compare {
   position: fixed;
   top: 10em;
-  right: 14em;
+  right: 15em;
 }
 
 #results .container {
@@ -41,41 +41,42 @@
 #love, #html {
   position: fixed;
   top: 8em;
-  right: 3em;
+  right: 4em;
 }
 #things {
   position: fixed;
   top: 14em;
-  right: 10em;
+  right: 11em;
 }
 #twitter, #javascript {
   position: fixed;
   top: 6em;
-  right: 16em;
+  right: 17em;
 }
 #api {
   position: fixed;
   top: 3em;
-  right: 11em;
+  right: 12em;
 }
 #super {
   position: fixed;
   top:12em;
-  right: 3.5em;
+  right: 4.5em;
 }
 #lucky {
   position: fixed;
   top: 4em;
-  right: 3em;
+  right: 4em;
 }
 #pic {
   position: fixed;
   top: 11em;
-  right: 17em;
+  right: 18em;
 
 }
 #results button {
-  position: relative;
+  position: fixed;
   bottom: 3em;
-  margin: 0px auto;
+  left: 45%;
+  right: 45%;
 }
