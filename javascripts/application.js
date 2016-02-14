@@ -147,9 +147,9 @@ function addToMapsJ(img){
 }
 
 function compareBulk(){
-  c1=[]
-  c2=[]
-  c3=[]
+  var c1=[]
+  var c2=[]
+  var c3=[]
 
   fullClient.getKeywordsForText({"text": xander.join(" ")}, function(response){
     response.map( term => term != "https" && term != "http" && term != "com" ? c1.push(term) : term )
@@ -170,5 +170,6 @@ function addAllImgs(){
   appendImg(my_fingerprint, dataObj.stephanie)
   appendImg(my_fingerprint, dataObj.comparison)
 }
+
 
 
