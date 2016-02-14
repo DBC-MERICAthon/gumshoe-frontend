@@ -8,9 +8,8 @@
   position: relative;
   height: 100%;
   width: 100%;
-  margin-top: 10%; }
-  .header h1 {
-    color: #BDB682;
+  margin-top: 5%; }
+  .header .logo {
     text-align: center; }
 
 .body {
@@ -41,7 +40,7 @@
 .footer {
   color: white;
   float: right;
-  margin: 10% 20% 0px 0px;
+  margin: 5% 20% 0px 0px;
   text-align: right; }
   .footer p {
     margin-left: 20px; }
