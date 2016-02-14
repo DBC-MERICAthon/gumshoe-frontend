@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('body').on('click', '#cortical-button', function(e){
   	e.preventDefault();
 		rotateAnimation("cortical-button",1,0);
+		setTimeout(loadDigitalPrint, 3000);
 	});
 });
 
@@ -16,5 +17,7 @@ function rotateAnimation(el,speed,degrees){
 }
 
 function loadDigitalPrint(){
-	
+	$("#home").hide();
+	$("#results").load("/pages/results.html");
+	$("#results").show();
 }

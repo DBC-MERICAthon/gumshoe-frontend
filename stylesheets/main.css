@@ -37,13 +37,8 @@
   max-width: 30%;
   height: auto; }
 
-.footer {
-  color: white;
-  float: right;
-  margin: 5% 20% 0px 0px;
-  text-align: right; }
-  .footer p {
-    margin-left: 20px; }
+#results {
+  display: none; }
 
 #results-view {
   display: none;
@@ -69,5 +64,13 @@
 #match-results {
   max-width: 50%;
   float: right; }
+
+.footer {
+  color: white;
+  float: right;
+  margin: 7% 15% 0px 0px;
+  text-align: right; }
+  .footer p {
+    margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
