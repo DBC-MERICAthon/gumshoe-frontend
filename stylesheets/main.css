@@ -77,16 +77,15 @@ html, body {
     margin-left: 20px; }
 
 .logo-networking-wrapper {
-  position: absolute; }
+  text-align: center; }
   .logo-networking-wrapper img {
-    max-width: 30%;
+    max-width: 25%;
     height: auto; }
 
 .profile-wrapper {
-  height: 90%;
+  height: 85%;
   width: 90%;
   margin: auto;
-  margin-top: 5%;
   border-radius: 30px; }
   .profile-wrapper .left-profile {
     background-color: #7b9095;
@@ -102,13 +101,14 @@ html, body {
       float: left;
       margin-left: 5%; }
       .profile-wrapper .left-profile #left-profile-image-wrapper #left-profile-image {
-        max-width: 85%;
-        height: auto; }
+        max-width: 40%;
+        height: auto;
+        border-radius: 100%; }
     .profile-wrapper .left-profile #left-data-image-wrapper {
       float: right;
       margin-right: 5%; }
       .profile-wrapper .left-profile #left-data-image-wrapper #left-data-image {
-        max-width: 85%;
+        max-width: 80%;
         height: auto; }
     .profile-wrapper .left-profile #left-terms {
       clear: both;
@@ -117,10 +117,9 @@ html, body {
       font-size: 30px; }
 
 .profile-wrapper {
-  height: 90%;
+  height: 85%;
   width: 90%;
   margin: auto;
-  margin-top: 5%;
   border-radius: 30px; }
   .profile-wrapper .right-profile {
     background-color: #7b9095;
@@ -136,13 +135,14 @@ html, body {
       float: right;
       margin-right: 5%; }
       .profile-wrapper .right-profile #right-profile-image-wrapper #right-profile-image {
-        max-width: 85%;
-        height: auto; }
+        max-width: 40%;
+        height: auto;
+        border-radius: 100%; }
     .profile-wrapper .right-profile #right-data-image-wrapper {
       float: left;
       margin-left: 5%; }
       .profile-wrapper .right-profile #right-data-image-wrapper #right-data-image {
-        max-width: 85%;
+        max-width: 80%;
         height: auto; }
     .profile-wrapper .right-profile #right-terms {
       clear: both;
