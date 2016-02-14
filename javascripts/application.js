@@ -162,7 +162,7 @@ function compareBulk(){
       dataObj.xanTerms = c1
       dataObj.stephTerms = c2
       fullClient.getKeywordsForText({"text": jesse.join(" ")}, function(response){
-        response.map( term => term != "https" && term != "http" && term != "com" ? c3.push(term) : term )
+        response.map( term => term != "https" && term != "http" && term != "com" && term != "api" && term != "website" && term != "store" && term != "html" ? c3.push(term) : term )
         dataObj.jesseTerms = c3
       })
     })
