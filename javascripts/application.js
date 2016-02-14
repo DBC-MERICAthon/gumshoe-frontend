@@ -124,11 +124,11 @@ function compareBulk(){
   // xander.map(text => c1.push({"text": text}))
   // stephanie.map(text => c2.push({"text": text}))
   fullClient.getKeywordsForText({"text": xander.join(" ")}, function(response){
-    response.map( term => c1.push({"term": term}))
+    response.map( term => term != "https" && term != "http" && term != "com" ? c1.push(term) : term )
     fullClient.getKeywordsForText({"text": stephanie.join(" ")}, function(response){
-      response.map( term => c2.push({"term": term}))
+      response.map( term => term != "https" && term != "http" && term != "com" ? c2.push(term) : term )
       dataObj.xanTerms= c1
-      dataObj.stephTerms= c1
+      dataObj.stephTerms= c2
       // addAllImgs();
     })
   })
