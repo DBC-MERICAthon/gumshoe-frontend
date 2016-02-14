@@ -1,0 +1,136 @@
+{
+  "positions":  {
+    "_total": 3,
+    "values":  [
+       {
+        "company":  {
+          "name": "Korean Business & Language Institutions"
+        },
+        "endDate":  {
+          "year": 2014
+        },
+        "id": 153344440,
+        "isCurrent": false,
+        "startDate":  {
+          "year": 2008
+        },
+        "summary": " Conducted Lessons focusing on Reading, Writing, Speaking , and Reading of the English Language.\n Used interactive teaching and group performances to excite and further stimulate interest in learning.",
+        "title": "ESL Instructor"
+      },
+       {
+        "company":  {
+          "name": "Carnaby International"
+        },
+        "endDate":  {
+          "year": 2011
+        },
+        "id": 232454971,
+        "isCurrent": false,
+        "startDate":  {
+          "year": 2010
+        },
+        "summary": "• Contacted people throughout the UK who had previously shown interest in film investment.\n• Sold the investment by explaining in detail associated tax reliefs, profit returns, and other benefits.\n• Attended movie screenings in London and other events in order to build better rapport and establish long term business relationships",
+        "title": "Investor Relations"
+      },
+       {
+        "company":  {
+          "id": 20859,
+          "industry": "Building Materials",
+          "name": "84 Lumber",
+          "size": "1001-5000 employees",
+          "type": "Privately Held"
+        },
+        "endDate":  {
+          "year": 2007
+        },
+        "id": 32507912,
+        "isCurrent": false,
+        "startDate":  {
+          "year": 2005
+        },
+        "summary": " Managed budget, payroll, and deliveries in a store grossing over $5 million annually.\n Created material estimates for construction contractors after analyzing complex project blueprints.\n Responsible for auditing inventory and training employees in my store and throughout California.\n• Averaged the highest sales among the other employees at my location.",
+        "title": "Co Manager"
+      }
+    ]
+  },
+  "summary": "Software Engineer interested in building applications that make a difference. I have over 10 years of experience gained in other fields both domestically and internationally. I returned to the US with the sole purpose of coding web applications.\n\nThe major technologies I use are Ruby, Rails, HTML5, CSS, JavaScript, jQuery, Ajax, JSON, AWS(EB, RDS, S3, EC2), Sinatra, API's, OAuth, BCrypt, Devise, Handlebars, SQL, and more.",
+  "threeCurrentPositions":  {
+    "_total": 0
+  },
+  "threePastPositions":  {
+    "_total": 3,
+    "values":  [
+       {
+        "company":  {
+          "name": "Korean Business & Language Institutions"
+        },
+        "endDate":  {
+          "year": 2014
+        },
+        "id": 153344440,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "kr",
+            "name": "Korea"
+          },
+          "name": "Korea"
+        },
+        "startDate":  {
+          "year": 2008
+        },
+        "summary": " Conducted Lessons focusing on Reading, Writing, Speaking , and Reading of the English Language.\n Used interactive teaching and group performances to excite and further stimulate interest in learning.",
+        "title": "ESL Instructor"
+      },
+       {
+        "company":  {
+          "name": "Carnaby International"
+        },
+        "endDate":  {
+          "year": 2011
+        },
+        "id": 232454971,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "es",
+            "name": "Spain"
+          },
+          "name": "Barcelona Area, Spain"
+        },
+        "startDate":  {
+          "year": 2010
+        },
+        "summary": "• Contacted people throughout the UK who had previously shown interest in film investment.\n• Sold the investment by explaining in detail associated tax reliefs, profit returns, and other benefits.\n• Attended movie screenings in London and other events in order to build better rapport and establish long term business relationships",
+        "title": "Investor Relations"
+      },
+       {
+        "company":  {
+          "id": 20859,
+          "industry": "Building Materials",
+          "name": "84 Lumber",
+          "size": "1001-5000 employees",
+          "type": "Privately Held"
+        },
+        "endDate":  {
+          "year": 2007
+        },
+        "id": 32507912,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "San Luis Obispo, California Area"
+        },
+        "startDate":  {
+          "year": 2005
+        },
+        "summary": " Managed budget, payroll, and deliveries in a store grossing over $5 million annually.\n Created material estimates for construction contractors after analyzing complex project blueprints.\n Responsible for auditing inventory and training employees in my store and throughout California.\n• Averaged the highest sales among the other employees at my location.",
+        "title": "Co Manager"
+      }
+    ]
+  },
+  "volunteer":  {}
+}
