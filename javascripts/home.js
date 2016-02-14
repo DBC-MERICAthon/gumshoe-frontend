@@ -17,8 +17,10 @@ function rotateAnimation(el,speed,degrees){
 }
 
 function loadDigitalPrint(){
-	$("#home").hide();
+	// $("#home").hide();
+	transitionOut($("#home"))
 	$("#results").load("/pages/results.html");
-	$("#results").show();
+	transitionIn($("#results"))
+	// $("#results").show();
   appendImg('my-fingerprint', dataObj.xander)
 }
