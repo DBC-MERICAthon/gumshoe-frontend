@@ -10,7 +10,6 @@ $(document).ready(function(){
 
 })
 
-var reallyGetInfo = getInfo()
 
 function getInfo(){
     getStephanieFacebook()

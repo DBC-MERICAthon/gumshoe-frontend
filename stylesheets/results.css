@@ -38,7 +38,7 @@
       }
 
 
-#love {
+#love, #html {
   position: fixed;
   top: 8em;
   right: 3em;
@@ -48,7 +48,7 @@
   top: 14em;
   right: 10em;
 }
-#twitter {
+#twitter, #javascript {
   position: fixed;
   top: 6em;
   right: 16em;
