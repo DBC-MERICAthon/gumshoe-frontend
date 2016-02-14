@@ -88,7 +88,8 @@
   .left-profile #my-terms {
     clear: both;
     list-style-type: none;
-    font-family: Lato; }
+    font-family: Copperplate;
+    font-size: 30px; }
 
 .right-profile {
   width: 50%;
@@ -105,6 +106,7 @@
   .right-profile #other-terms {
     clear: both;
     list-style-type: none;
-    font-family: Copperplate; }
+    font-family: Copperplate;
+    font-size: 30px; }
 
 /*# sourceMappingURL=main.css.map */
