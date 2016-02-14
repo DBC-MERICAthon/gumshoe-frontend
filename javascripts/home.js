@@ -28,9 +28,9 @@ function loadDigitalPrint(){
 		$("#results").html(response);
 		// $(".wrapper").show()
 		var list = ""
-		try {dataObj.stephTerms.map(term => list += "<li>"+ term+"</li>")}
+		try {dataObj.stephTerms.map(term => list += "<li id= "+term+">"+ term+"</li>")}
 		catch(e){
-			list = "<li>lucky</li><li>super</li><li>pic</li><li>love</li><li>api</li><li>things</li><li>twitter</li>"
+			list = "<li id='lucky'>lucky</li><li id='super'>super</li><li id='pic'>pic</li><li id='love'>love</li><li id='api'>api</li><li id='things'>things</li><li id='twitter'>twitter</li>"
 		}
 		// console.log(list)
 		appendImg("center-div", dataObj.stephanie)
@@ -40,7 +40,7 @@ function loadDigitalPrint(){
 
 
 	})
-  appendImg('my-fingerprint', dataObj.xander)
+  // appendImg('my-fingerprint', dataObj.xander)
 }
 
 function openResults(){

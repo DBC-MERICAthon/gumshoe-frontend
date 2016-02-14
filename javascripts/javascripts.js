@@ -9,14 +9,14 @@
 function closeResults(){
 
 		$('#results-view').removeClass('open');
-		$('#results-view').animate({'opacity':0},300);
+		// $('#results-view').animate({'opacity':0},300);
 
-		setTimeout(function(){
+		// setTimeout(function(){
 			// $('.container').slideDown();
 			// $('#results-view').slideUp();
 
-			$('.container').animate({'opacity':1},300);
-		},300)
+		// 	$('.container').animate({'opacity':1},300);
+		// },300)
 	}
 
 	// $('.search-again').click(function(){
