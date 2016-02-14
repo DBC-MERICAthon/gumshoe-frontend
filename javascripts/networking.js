@@ -4,7 +4,7 @@ $(document).ready(function(){
   setTimeout(loadDigitalPrint, 3000);
   $('body').on('click', '#cortical-button-search', function(e){
     e.preventDefault();
-    rotateAnimation("cortical-button-search",1,0);
+    rotateAnimation2("cortical-button-search",1,0);
   });
 
 });
@@ -45,7 +45,7 @@ function loadJesseTerms(){
   }
 }
 
-function rotateAnimation(el,speed,degrees){
+function rotateAnimation2(el,speed,degrees){
   var elem = document.getElementById(el);
   elem.style.WebkitTransform = "rotate("+degrees+"deg)";
   degrees++;
@@ -55,7 +55,7 @@ function rotateAnimation(el,speed,degrees){
     swapMatchData();
     return;
   }
-  setTimeout('rotateAnimation(\''+el+'\','+speed+','+degrees+')',speed);
+  setTimeout('rotateAnimation2(\''+el+'\','+speed+','+degrees+')',speed);
 }
 
 function swapMatchData() {
