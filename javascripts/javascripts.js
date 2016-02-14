@@ -6,7 +6,7 @@
 //     });
 // }
 
-	function closeResults(){
+function closeResults(){
 
 		$('#results-view').removeClass('open');
 		$('#results-view').animate({'opacity':0},300);
@@ -19,18 +19,16 @@
 		},300)
 	}
 
-	$('.search-again').click(function(){
-		closeResults();
-	})
+	// $('.search-again').click(function(){
+	// 	closeResults();
+	// })
 
-});
-// function openResults(){
-// 	$('#results-view').show()
-// 	$('.wrapper').hide()
-// 	$('#results-view').addClass('open');    //Makes prject div appear
-// 	$('.container').animate({'opacity':0},300);//Makes projects disappear
 
-// 	setTimeout(function(){
-// 		// $('#results-view').slideDown();
-// 		// $('.container').slideUp();
-// },300);
+function openResults(){
+	$('#results-view').show()
+	$('.wrapper').hide()
+	// $('#results-view').addClass('open');    //Makes prject div appear
+	// $('.container').animate({'opacity':0},300);//Makes projects disappear
+
+}
+
