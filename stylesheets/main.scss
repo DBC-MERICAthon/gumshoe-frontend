@@ -53,16 +53,10 @@ $background: #BDB682;
     height: auto;
 }
 
-
-.footer {
-		color: white;
-	  float: right;
-    margin: 5% 20% 0px 0px;
-    text-align: right;
-	p {
-		margin-left: 20px;
-	}
+#results {
+	display: none;
 }
+
 
 #results-view {
  display: none;
@@ -89,4 +83,15 @@ float: left;
 #match-results {
   max-width: 50%;
   float: right;
+}
+
+
+.footer {
+		color: white;
+	  float: right;
+    margin: 7% 15% 0px 0px;
+    text-align: right;
+	p {
+		margin-left: 20px;
+	}
 }
