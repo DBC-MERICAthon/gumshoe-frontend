@@ -51,7 +51,7 @@ function rotateAnimation2(el,speed,degrees){
   var elem = document.getElementById(el);
   elem.style.WebkitTransform = "rotate("+degrees+"deg)";
   degrees++;
-  if(degrees > 360){
+  if(degrees > 360 * 2.5){
     $('#cortical-button-search').hide();
     $('#cortical-button-search-green').show();
     swapMatchData();
@@ -62,6 +62,8 @@ function rotateAnimation2(el,speed,degrees){
 
 function swapMatchData() {
   $('#right-profile-image').attr("src","../images/jesse-headshot.jpg");
+  $('#right-data-image').attr("src","../images/jesse-dataprint.png");
+  $('#center-data-image').attr("src","../images/steph-jesse-data.png");
   loadJesseTerms();
-  loadDigitalPrint();
+  // loadDigitalPrint();
 }
