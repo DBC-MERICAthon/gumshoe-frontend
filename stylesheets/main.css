@@ -186,4 +186,38 @@ html, body {
   width: 7%;
   height: auto; }
 
+#starman-empty {
+  position: fixed;
+  bottom: 8%;
+  right: 35%;
+  z-index: 3;
+  width: 7%;
+  height: auto; }
+
+#starman-fill {
+  position: fixed;
+  display: none;
+  bottom: 8%;
+  right: 35%;
+  z-index: 3;
+  width: 7%;
+  height: auto;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange; }
+
+.match-button-wrapper {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+#match {
+  max-width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=main.css.map */

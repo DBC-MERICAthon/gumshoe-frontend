@@ -5,7 +5,11 @@ $(document).ready(function(){
     e.preventDefault();
     rotateAnimation2("cortical-button-search",1,0);
   });
-
+  $('body').on('click', '#starman-empty', function(e){
+    e.preventDefault();
+    $('#starman-empty').hide();
+    $('#starman-fill').show();
+  });
 });
 
 function loadDigitalPrint(){
@@ -61,6 +65,8 @@ function rotateAnimation2(el,speed,degrees){
 }
 
 function swapMatchData() {
+  $('#starman-empty').show();
+  $('#starman-fill').hide();
   $('#right-profile-image').attr("src","../images/jesse-headshot.jpg");
   $('#right-data-image').attr("src","../images/jesse-dataprint.png");
   $('#center-data-image').attr("src","../images/steph-jesse-data.png");
