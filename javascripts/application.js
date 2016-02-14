@@ -37,8 +37,9 @@ function getJLN(){
   })
 }
 
-function appendImg(img){
-  $("#results").append( "<img id='compare' src='data:image/jpeg;base64,"+ img +"'/>")
+
+function appendImg(location,img){
+  $('\#'+location).append( "<img id='compare' src='data:image/jpeg;base64,"+ img +"'/>")
 }
 
 function getSMHTwitter(){
@@ -165,9 +166,9 @@ function compareBulk(){
 }
 
 function addAllImgs(){
-  appendImg(dataObj.xander)
-  appendImg(dataObj.stephanie)
-  appendImg(dataObj.comparison)
+  appendImg(my_fingerprint, dataObj.xander)
+  appendImg(my_fingerprint, dataObj.stephanie)
+  appendImg(my_fingerprint, dataObj.comparison)
 }
 
 
