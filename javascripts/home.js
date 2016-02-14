@@ -21,7 +21,7 @@ function rotateAnimation(el,speed,degrees){
 }
 
 function loadDigitalPrint(){
-	$("#home").fadeOut();
+	$("#home").hide();
 
 	$.get("/pages/results.html", function(response){
 		$("#results").html(response);
@@ -34,9 +34,8 @@ function loadDigitalPrint(){
 		appendImg("center-div", dataObj.stephanie)
 		$("#center-div").append("<div id='left-terms-wrapper'><ul id='left-terms'>" + list + "</ul></div>")
 
-		$("#results").fadeIn()
-
-
+		$("#results").fadeIn();
+		
 	})
 }
 
