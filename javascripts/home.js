@@ -4,6 +4,11 @@ $(document).ready(function(){
 		rotateAnimation("cortical-button",1,0);
 		setTimeout(loadDigitalPrint, 3000);
 	});
+	  $('body').on('click', '#match', function(e){
+      // e.preventDefault();
+      console.log("hit")
+      openResults();
+    });
 });
 
 function rotateAnimation(el,speed,degrees){
@@ -17,10 +22,23 @@ function rotateAnimation(el,speed,degrees){
 }
 
 function loadDigitalPrint(){
-	// $("#home").hide();
-	transitionOut($("#home"))
-	$("#results").load("/pages/results.html");
-	transitionIn($("#results"))
+	$("#home").hide();
+	// transitionOut($("#home"))
+
+	$.get("/pages/results.html", function(response){
+		$("#results").html(response);
+		$(".wrapper").show()
+		$("#results").show()
+		// $("#results-view").show()
+		// console.log(response)
+		// transitionIn($("#results-view"))
+	})
 	// $("#results").show();
   appendImg('my-fingerprint', dataObj.xander)
+}
+
+function openResults(){
+	$.get("/pages/networking.html", function(response){
+		$("#results").html(response)
+	})
 }
