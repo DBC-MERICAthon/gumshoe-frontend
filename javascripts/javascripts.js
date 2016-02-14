@@ -12,8 +12,8 @@
 		$('#results-view').animate({'opacity':0},300);
 
 		setTimeout(function(){
-			$('.container').slideDown();
-			$('#results-view').slideUp();
+			// $('.container').slideDown();
+			// $('#results-view').slideUp();
 
 			$('.container').animate({'opacity':1},300);
 		},300)
@@ -23,19 +23,14 @@
 		closeResults();
 	})
 
-
-// 	function generateRandom() {
-//   return Math.floor(Math.random() * 300);
-// };
-
 });
-function openResults(){
-	$('#results-view').show()
-	$('.wrapper').hide()
-	$('#results-view').addClass('open');    //Makes prject div appear
-	$('.container').animate({'opacity':0},300);//Makes projects disappear
+// function openResults(){
+// 	$('#results-view').show()
+// 	$('.wrapper').hide()
+// 	$('#results-view').addClass('open');    //Makes prject div appear
+// 	$('.container').animate({'opacity':0},300);//Makes projects disappear
 
-	setTimeout(function(){
-		$('#results-view').slideDown();
-		$('.container').slideUp();
-},300);
+// 	setTimeout(function(){
+// 		// $('#results-view').slideDown();
+// 		// $('.container').slideUp();
+// },300);
