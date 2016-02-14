@@ -21,7 +21,7 @@ function getInfo(){
   }
 
 function appendImg(img){
-  $("#results").append( "<img id='compare' src='data:image/jpeg;base64,"+ img +"'/>")
+  $("#my-fingerprint").append( "<img id='compare' src='data:image/jpeg;base64,"+ img +"'/>")
 }
 
 function getSMHTwitter(){
