@@ -6,44 +6,61 @@ $background: #284A32;
 
 .wrapper {
 	background-color: $background;
-	height: 100vh;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
 }
 
 .content-wrapper {
-	position: absolute;
-	top: 25%;
-	height: 100%;
-	width: 100%;
 }
 
-.title-container {
+.header {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin-top: 10%;
 	h1 {
 		color: #BDB682;
 		text-align: center;
 	}
 }
 
-#custom-search-input {
-		margin-left: auto;
-		margin-right: auto;
+.body {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.oauth-container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 0;
+	width: 32%;
+	text-align: center;
+	i {
 		margin-top: 10px;
-		padding: 0;
-		width: 40%;
-
-	.search-query {
-		left: 15px;
-		border-radius: 15px;
+		color: green;
 	}
+}
 
-	button {
-		border: 0;
-		background: none;
-		padding: 2px 5px;
-		margin-top: 2px;
-		position: relative;
-		left: -23px;
-		margin-bottom: 0;
-		color: $background;
-		z-index: 10;
+.submit-button-wrapper {
+	margin-top: 5%;
+	position: relative;
+	text-align: center;
+}
+
+.resize {
+    max-width: 30%;
+    height: auto;
+}
+
+
+.footer {
+		color: white;
+	  float: right;
+    margin: 10% 20% 0px 0px;
+    text-align: right;
+	p {
+		margin-left: 20px;
 	}
 }
