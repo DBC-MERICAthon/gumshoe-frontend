@@ -172,8 +172,7 @@ html, body {
 #cortical-button-search {
   position: fixed;
   top: 16%;
-  left: 50%;
-  transform: translate(-50%, -5%);
+  left: 46.65%;
   z-index: 3;
   width: 7%;
   height: auto; }
