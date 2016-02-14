@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  setTimeout(loadStephTerms, 30000);
-  setTimeout(loadXanTerms, 35000);
-  setTimeout(loadDigitalPrint, 3000);
+  console.log('here');
+  setTimeout(loadStephTerms, 1000);
+  setTimeout(loadXanTerms, 3000);
   $('body').on('click', '#cortical-button-search', function(e){
     e.preventDefault();
     rotateAnimation2("cortical-button-search",1,0);
@@ -10,8 +10,8 @@ $(document).ready(function(){
 });
 
 function loadDigitalPrint(){
-  var my_src = 'data:image/jpeg;base64,' + dataObj.stephanie
-  $('#left-data-image').attr("src", my_src);
+  var my_src = 'data:image/jpeg;base64,' + dataObj.jesse
+  $('#right-data-image').attr("src", my_src);
 }
 
 function loadStephTerms(){
@@ -61,6 +61,5 @@ function rotateAnimation2(el,speed,degrees){
 function swapMatchData() {
   $('#right-profile-image').attr("src","../images/jesse-headshot.jpg");
   loadJesseTerms();
-  console.log(dataObj.jesse)
-  $('#right-data-image').attr("src", dataObj.jesse);
+  loadDigitalPrint();
 }

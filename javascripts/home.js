@@ -6,7 +6,6 @@ $(document).ready(function(){
 	});
 	  $('body').on('click', '#match', function(e){
       // e.preventDefault();
-      console.log("hit")
       openResults();
     });
 });
@@ -32,7 +31,6 @@ function loadDigitalPrint(){
 		catch(e){
 			list = "<li id='lucky'>lucky</li><li id='super'>super</li><li id='pic'>pic</li><li id='love'>love</li><li id='api'>api</li><li id='things'>things</li><li id='twitter'>twitter</li>"
 		}
-		// console.log(list)
 		appendImg("center-div", dataObj.stephanie)
 		$("#center-div").append("<div id='left-terms-wrapper'><ul id='left-terms'>" + list + "</ul></div>")
 
@@ -40,7 +38,6 @@ function loadDigitalPrint(){
 
 
 	})
-  // appendImg('my-fingerprint', dataObj.xander)
 }
 
 function openResults(){
