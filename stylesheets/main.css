@@ -1,7 +1,5 @@
-
 html, body {
   height: 100%; }
-
 
 .wrapper {
   background-color: #6cadd3;
@@ -42,11 +40,6 @@ html, body {
   max-width: 30%;
   height: auto; }
 
-.container {
-  width: 100%;
-  text-align: center;
-}
-
 #results {
   display: none; }
 
@@ -63,55 +56,9 @@ html, body {
   margin: 25px auto 0;
   font-weight: 400;
   padding: 30px;
-  }
-
-/*  .results-circle {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  }*/
-
-  .fingerprint-image {
-    display: center;
-   padding-top: 50%;
-  }
-
-  .info {
-    -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: green;
-  width: 90px;
-  height: 90px;
-  }
-
-ul li {
-  list-style-type: none;
-}
-
-ul li p {
-padding-top: 40%;
-}
-
-#left-div {
-   float: left;
-    width: 40%;
-    height: 500px;
-}
-
-
-#center-div {
-    display: inline-block;
-    margin: 0 auto;
-    height: 500px;
-    display: -webkit-inline-box;
-}
-
-#right-div {
-   float: right;
-    width: 40%;
-    height: 500px;
-}
+  background: #222222;
+  /* for IE */
+  background: rgba(34, 34, 34, 0.75); }
 
 #your-results {
   max-width: 50%;
@@ -142,7 +89,7 @@ padding-top: 40%;
   border-radius: 30px; }
   .profile-wrapper .left-profile {
     background-color: #7b9095;
-    width: 47%;
+    width: 45%;
     height: 100%;
     padding-top: 15px;
     border-radius: 30px;
@@ -150,13 +97,12 @@ padding-top: 40%;
     border-right: solid black;
     float: left;
     text-align: center; }
-    .profile-wrapper .left-profile #left-profile-image-wrapper {
-      float: left;
-      margin-left: 5%; }
-      .profile-wrapper .left-profile #left-profile-image-wrapper #left-profile-image {
-        max-width: 40%;
-        height: auto;
-        border-radius: 100%; }
+    .profile-wrapper .left-profile #left-profile-image {
+      max-width: 40%;
+      padding: 0;
+      height: auto;
+      border: solid black;
+      border-radius: 100%; }
     .profile-wrapper .left-profile #left-data-image-wrapper {
       float: right;
       margin-right: 5%; }
@@ -167,7 +113,12 @@ padding-top: 40%;
       clear: both;
       list-style-type: none;
       font-family: Copperplate;
-      font-size: 30px; }
+      font-size: 30px;
+      color: #f5f5f5; }
+      .profile-wrapper .left-profile #left-terms li:nth-child(odd) {
+        margin-left: 6em; }
+      .profile-wrapper .left-profile #left-terms li:nth-child(even) {
+        margin-right: 6em; }
 
 .profile-wrapper {
   height: 85%;
@@ -176,7 +127,7 @@ padding-top: 40%;
   border-radius: 30px; }
   .profile-wrapper .right-profile {
     background-color: #7b9095;
-    width: 47%;
+    width: 45%;
     height: 100%;
     padding-top: 15px;
     border-radius: 30px;
@@ -184,13 +135,12 @@ padding-top: 40%;
     border-right: solid black;
     float: right;
     text-align: center; }
-    .profile-wrapper .right-profile #right-profile-image-wrapper {
-      float: right;
-      margin-right: 5%; }
-      .profile-wrapper .right-profile #right-profile-image-wrapper #right-profile-image {
-        max-width: 40%;
-        height: auto;
-        border-radius: 100%; }
+    .profile-wrapper .right-profile #right-profile-image {
+      max-width: 40%;
+      padding: 0;
+      height: auto;
+      border: solid black;
+      border-radius: 100%; }
     .profile-wrapper .right-profile #right-data-image-wrapper {
       float: left;
       margin-left: 5%; }
@@ -201,7 +151,12 @@ padding-top: 40%;
       clear: both;
       list-style-type: none;
       font-family: Copperplate;
-      font-size: 30px; }
+      font-size: 30px;
+      color: #f5f5f5; }
+      .profile-wrapper .right-profile #right-terms li:nth-child(odd) {
+        margin-right: 6em; }
+      .profile-wrapper .right-profile #right-terms li:nth-child(even) {
+        margin-left: 6em; }
 
 #center-data-image-wrapper {
   position: fixed;
@@ -213,5 +168,14 @@ padding-top: 40%;
   border-radius: 100%;
   border: solid black;
   background-color: #7b9095; }
+
+#cortical-button-search {
+  position: fixed;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  z-index: 3;
+  width: 7%;
+  height: auto; }
 
 /*# sourceMappingURL=main.css.map */

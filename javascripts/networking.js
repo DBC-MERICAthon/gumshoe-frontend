@@ -1,13 +1,10 @@
 $(document).ready(function(){
-  // $('body').on('click', '.left-profile', function(e){
-  	// e.preventDefault();
-		// setTimeout(loadDigitalPrint, 3000);
-	// });
-		setTimeout(loadTerms, 200);
-		//   var terms = ['japan', 'jet', 'programming', 'videogames'];
-  // for (i = 0; i < terms.length; i++) {
-  // 	console.log(terms[i]);
-  // }
+	setTimeout(loadTerms, 200);
+  $('body').on('click', '#cortical-button', function(e){
+    e.preventDefault();
+    rotateAnimation("cortical-button",1,0);
+    setTimeout(loadDigitalPrint, 3000);
+  });
 });
 
 function loadDigitalPrint(){
@@ -26,6 +23,21 @@ function loadTerms(){
   }
 }
 
+
+$(document).ready(function(){
+
+  });
+});
+
+function rotateAnimation(el,speed,degrees){
+  var elem = document.getElementById(el);
+  elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+  degrees++;
+  if(degrees > 359){
+    degrees = 1;
+  }
+  setTimeout('rotateAnimation(\''+el+'\','+speed+','+degrees+')',speed);
+}
 
 
 // $(document).ready(function(){
