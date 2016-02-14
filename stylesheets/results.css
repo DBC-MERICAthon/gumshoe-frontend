@@ -3,7 +3,17 @@
   font-family: Copperplate;
   font-size: 30px;
   color: #f5f5f5;
-  width: 80%;
+  /*width: 30%;*/
+  position: fixed;
+  right: 8em;
+  top: 8em;
+  display: inline-block;
+}
+
+#center-div #compare {
+  position: fixed;
+  top: 10em;
+  right: 14em;
 }
 
 #results .container {
@@ -15,11 +25,54 @@
 }
 
 #results #profile-image {
-        max-width: 40%;
+        width: 40%;
         padding: 0;
         height: auto;
         border: solid black;
         border-radius: 100%;
         float: left;
+
       }
+}
+
+#love {
+  position: fixed;
+  top: 6em;
+  right: 15em;
+}
+#things {
+  position: fixed;
+  top: 14em;
+  right: 10em;
+}
+#twitter {
+  position: fixed;
+  top: 6em;
+  right: 16em;
+}
+#api {
+  position: fixed;
+  top: 3em;
+  right: 11em;
+}
+#super {
+  position: fixed;
+  top:11.5em;
+  right: 3.5em;
+}
+#lucky {
+  position: fixed;
+  top: 4em;
+  right: 3em;
+}
+#pic {
+  position: fixed;
+  top: 11em;
+  right: 17em;
+
+}
+#results button {
+  position: relative;
+  bottom: 3em;
+  margin: 0px auto;
 }

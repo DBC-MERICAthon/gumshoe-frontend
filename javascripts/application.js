@@ -59,11 +59,15 @@ function getXTwitter(){
 function compare(){
   getXPmap()
   getSMHmap()
+  getJCmap()
   compareBulk()
   // $.get("scraped/XPSON.json", function(response){
     // response["results"]["collection1"].map( tweet => xander.push(tweet["twitter"]))
     fullClient.compareImage({expressions: [{"text": stephanie.join(" ")}, {"text": xander.join(" ")}]}, function(img){
-      dataObj.comparison = img
+      dataObj.comparisonXS = img
+      fullClient.compareImage({expressions: [{"text": stephanie.join(" ")}, {"text": jesse.join(" ")}]}, function(img){
+        dataObj.comparisonJS = img
+      })
     })
   // })
 }
@@ -132,8 +136,9 @@ function getSMHmap(){
 }
 
 function getJCmap(){
-  fullClient.getInfo({expression: {"text": jesse.join()}}, addToMapsJ)
+  fullClient.getImage({expression: {"text": jesse.join()}}, addToMapsJ)
 }
+
 
 function addToMapsX(img){
     dataObj.xander = img
@@ -168,7 +173,7 @@ function compareBulk(){
 function addAllImgs(){
   appendImg(my_fingerprint, dataObj.xander)
   appendImg(my_fingerprint, dataObj.stephanie)
-  appendImg(my_fingerprint, dataObj.comparison)
+  appendImg(my_fingerprint, dataObj.comparisonXS)
 }
 
 
