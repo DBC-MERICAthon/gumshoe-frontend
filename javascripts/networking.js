@@ -1,7 +1,6 @@
 $(document).ready(function(){
-  console.log('here');
-  setTimeout(loadStephTerms, 1000);
-  setTimeout(loadXanTerms, 3000);
+  loadStephTerms();
+  setTimeout(loadXanTerms, 4000);
   $('body').on('click', '#cortical-button-search', function(e){
     e.preventDefault();
     rotateAnimation2("cortical-button-search",1,0);
@@ -32,6 +31,8 @@ function loadXanTerms(){
   for (i = 0; i < terms.length; i++) {
     $('#right-terms').append('<li>'+terms[i]+'</li>')
   }
+  $('#right-profile-image').attr("src","../images/xander-headshot.jpg");
+  $('#right-data-image').attr("src","../images/xander-dataprint.png");
 }
 
 function loadJesseTerms(){
