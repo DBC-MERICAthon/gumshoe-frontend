@@ -22,18 +22,24 @@ function rotateAnimation(el,speed,degrees){
 }
 
 function loadDigitalPrint(){
-	$("#home").hide();
-	// transitionOut($("#home"))
+	$("#home").fadeOut();
 
 	$.get("/pages/results.html", function(response){
 		$("#results").html(response);
-		$(".wrapper").show()
-		$("#results").show()
-		// $("#results-view").show()
-		// console.log(response)
-		// transitionIn($("#results-view"))
+		// $(".wrapper").show()
+		var list = ""
+		try {dataObj.stephTerms.map(term => list += "<li>"+ term+"</li>")}
+		catch(e){
+			list = "<li>lucky</li><li>super</li><li>pic</li><li>love</li><li>api</li><li>things</li><li>twitter</li>"
+		}
+		// console.log(list)
+		appendImg("center-div", dataObj.stephanie)
+		$("#center-div").append("<div id='left-terms-wrapper'><ul id='left-terms'>" + list + "</ul></div>")
+
+		$("#results").fadeIn()
+
+
 	})
-	// $("#results").show();
   appendImg('my-fingerprint', dataObj.xander)
 }
 

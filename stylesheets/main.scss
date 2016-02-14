@@ -142,7 +142,7 @@ html, body {
 				##{$side1}-data-image {
 					max-width: $nwk-image-height;
 	    		height: auto;
-				}			
+				}
 			}
 			##{$side1}-terms {
 				clear: both;
@@ -175,7 +175,13 @@ html, body {
 	border-radius: 100%;
 	border: solid black;
 	background-color: #7b9095;
+
+	#center-data-image {
+		// max-width: $nwk-image-height;
+		// height: auto;
+	}
 }
+
 
 #cortical-button-search {
 	position: fixed;
