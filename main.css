@@ -1,5 +1,8 @@
+body {
+    background-color: #284A32;
+}
+
 .wrapper {
-  background-color: #284A32;
   height: 100vh; }
 
 .content-wrapper {
