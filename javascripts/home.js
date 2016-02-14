@@ -20,5 +20,5 @@ function loadDigitalPrint(){
 	$("#home").hide();
 	$("#results").load("/pages/results.html");
 	$("#results").show();
-  appendImg('my_fingerprint', dataObj.xander)
+  appendImg('my-fingerprint', dataObj.xander)
 }
