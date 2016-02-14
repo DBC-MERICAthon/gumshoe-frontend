@@ -34,4 +34,9 @@ $(window).load(function(){
 		closeResults();
 	})
 
+
+// 	function generateRandom() {
+//   return Math.floor(Math.random() * 300);
+// };
+
 });

@@ -23,16 +23,32 @@
 
 	<div class="container">
 	 <h1>Some Shit</h1>
-	 	<div>
-					<img class="fingerprint-image results-circle" src="../images/xander.png">
+	 	
+	 		<div id="left-div">
+	 			<ul>
+	 				<li class="info"><p>Random</p></li>
+	 				<li class="info"><p>Words</p></li>
+	 				<li class="info"><p>Go </p></li>
+	 				<li class="info"><p>Here</p></li>
+	 					</ul>
+
+	 		</div>
+					<div id="center-div">
+						<img class="fingerprint-image results-circle" src="../images/xander.png">
+					</div>
+					<div id="right-div">
+						<ul>
+						<li class="info"><p>More</p></li>
+						<li class="info"><p>Random</p></li>
+						<li class="info"><p>Words</p></li>
+						<!-- <li class="info"><img class="your-image " src="https://avatars0.githubusercontent.com/u/12554540?v=3&s=400"></li> -->
+					</ul>
+					</div>
 			<!-- 		<img class="your-image results-circle" src="https://avatars0.githubusercontent.com/u/12554540?v=3&s=400"> -->
 			<div>
 				<p>Stuff about you</p>
 			</div>
-	</div>
-	 <div>
 
-	 </div>
 	
 	 				<button style="display: block; margin: 0 auto;" class="find-match btn btn-primary">Find a Match</button>
 
@@ -58,5 +74,19 @@
 </div> 
 
 </div>
+
+<script>
+		$.each($('ul li'), function() {
+			$(this).css({
+				position: 'absolute',
+				top:  generateRandom() + 100 + 'px',
+				left: generateRandom() + 100 + 'px',
+			});
+		});
+
+			function generateRandom() {
+  return Math.floor(Math.random() * 500);
+};
+		</script>
 </body>
 </html>
