@@ -1,7 +1,7 @@
 $(window).load(function(){
 
 
-    $('.input-group-btn').click(function(e){
+    $('.find-match').click(function(e){
     	e.preventDefault();
     	openResults();
     });
@@ -13,7 +13,7 @@ $(window).load(function(){
 		
 		setTimeout(function(){
 			$('#results-view').slideDown();
-			$('.row').slideUp();	
+			$('.container').slideUp();	
 		},300);
 	}
 	
@@ -23,15 +23,20 @@ $(window).load(function(){
 		$('#results-view').animate({'opacity':0},300);
 		
 		setTimeout(function(){
-			$('.row').slideDown();
+			$('.container').slideDown();
 			$('#results-view').slideUp();
 
-			$('.row').animate({'opacity':1},300);	
+			$('.container').animate({'opacity':1},300);	
 		},300)	
 	}
 
 	$('.search-again').click(function(){
 		closeResults();
 	})
+
+
+// 	function generateRandom() {
+//   return Math.floor(Math.random() * 300);
+// };
 
 });
