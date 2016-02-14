@@ -12,8 +12,8 @@ function closeResults(){
 		$('#results-view').animate({'opacity':0},300);
 
 		setTimeout(function(){
-			$('.container').slideDown();
-			$('#results-view').slideUp();
+			// $('.container').slideDown();
+			// $('#results-view').slideUp();
 
 			$('.container').animate({'opacity':1},300);
 		},300)
@@ -23,6 +23,7 @@ function closeResults(){
 	// 	closeResults();
 	// })
 
+
 function openResults(){
 	$('#results-view').show()
 	$('.wrapper').hide()
@@ -30,3 +31,4 @@ function openResults(){
 	// $('.container').animate({'opacity':0},300);//Makes projects disappear
 
 }
+
