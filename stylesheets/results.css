@@ -1,0 +1,25 @@
+#center-div ul {
+  list-style: none;
+  font-family: Copperplate;
+  font-size: 30px;
+  color: #f5f5f5;
+  width: 80%;
+}
+
+#results .container {
+  text-align: center;
+}
+
+#results {
+  margin: 0px auto;
+}
+
+#results #profile-image {
+        max-width: 40%;
+        padding: 0;
+        height: auto;
+        border: solid black;
+        border-radius: 100%;
+        float: left;
+      }
+}
