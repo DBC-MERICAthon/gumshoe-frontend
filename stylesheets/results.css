@@ -9,6 +9,9 @@
   top: 8em;
   display: inline-block;
 }
+.wrapper .container {
+  top: .5em;
+}
 
 #center-div #compare {
   position: fixed;
@@ -33,12 +36,12 @@
         float: left;
 
       }
-}
+
 
 #love {
   position: fixed;
-  top: 6em;
-  right: 15em;
+  top: 8em;
+  right: 3em;
 }
 #things {
   position: fixed;
@@ -57,7 +60,7 @@
 }
 #super {
   position: fixed;
-  top:11.5em;
+  top:12em;
   right: 3.5em;
 }
 #lucky {
