@@ -63,7 +63,7 @@ function getXanderFacebook(){
     return true
 }
 function getXanderLinkedIn(){
-  $.ajax({url: "xpLN.json"})
+  $.ajax({url: "scraped/xpLN.json"})
   .done(function(response){
     addLNData(response, xander)
     return true
@@ -127,9 +127,9 @@ function compareBulk(){
     response.map( term => c1.push({"term": term}))
     fullClient.getKeywordsForText({"text": stephanie.join(" ")}, function(response){
       response.map( term => c2.push({"term": term}))
-      console.log(c1)
-      console.log(c2)
-      addAllImgs();
+      dataObj.xanTerms= c1
+      dataObj.stephTerms= c1
+      // addAllImgs();
     })
   })
 }
