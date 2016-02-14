@@ -33,6 +33,7 @@ function loadXanTerms(){
   }
   $('#right-profile-image').attr("src","../images/xander-headshot.jpg");
   $('#right-data-image').attr("src","../images/xander-dataprint.png");
+  $('#center-data-image').attr("src","../images/xander-dataprint.png");
 }
 
 function loadJesseTerms(){
