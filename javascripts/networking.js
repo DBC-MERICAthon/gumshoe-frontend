@@ -1,28 +1,47 @@
 $(document).ready(function(){
-	setTimeout(loadTerms, 200);
+  setTimeout(loadStephTerms, 30000);
+  setTimeout(loadXanTerms, 35000);
   setTimeout(loadDigitalPrint, 3000);
-
   $('body').on('click', '#cortical-button-search', function(e){
     e.preventDefault();
     rotateAnimation("cortical-button-search",1,0);
   });
-  
+
 });
 
 function loadDigitalPrint(){
-  appendImg('my-fingerprint', dataObj.xander)
+  var my_src = 'data:image/jpeg;base64,' + dataObj.stephanie
+  $('#left-data-image').attr("src", my_src);
 }
 
-function loadTerms(){
-  // console.log(dataObj.xanTerms[0])
-  // var terms = dataObj.xanTerms;
-  var terms = ['japan', 'jet', 'videogames', 'coding', 'ucla', 'california', 'beard'];
+function loadStephTerms(){
+  var terms = dataObj.stephTerms;
   for (i = 0; i < terms.length; i++) {
-  	terms[i] = terms[i].charAt(0).toUpperCase() + terms[i].slice(1);
+    terms[i] = terms[i].charAt(0).toUpperCase() + terms[i].slice(1);
   }
   for (i = 0; i < terms.length; i++) {
-  	$('#left-terms').append('<li>'+terms[i]+'</li>')
-  	$('#right-terms').append('<li>'+terms[terms.length - i - 1]+'</li>')
+    $('#left-terms').append('<li>'+terms[i]+'</li>')
+  }
+}
+
+function loadXanTerms(){
+  var terms = dataObj.xanTerms;
+  for (i = 0; i < terms.length; i++) {
+    terms[i] = terms[i].charAt(0).toUpperCase() + terms[i].slice(1);
+  }
+  for (i = 0; i < terms.length; i++) {
+    $('#right-terms').append('<li>'+terms[i]+'</li>')
+  }
+}
+
+function loadJesseTerms(){
+  var terms = dataObj.jesseTerms;
+  $('#right-terms').empty();
+  for (i = 0; i < terms.length; i++) {
+    terms[i] = terms[i].charAt(0).toUpperCase() + terms[i].slice(1);
+  }
+  for (i = 0; i < terms.length; i++) {
+    $('#right-terms').append('<li>'+terms[i]+'</li>')
   }
 }
 
@@ -30,8 +49,18 @@ function rotateAnimation(el,speed,degrees){
   var elem = document.getElementById(el);
   elem.style.WebkitTransform = "rotate("+degrees+"deg)";
   degrees++;
-  if(degrees > 359){
-    degrees = 1;
+  if(degrees > 360){
+    $('#cortical-button-search').hide();
+    $('#cortical-button-search-green').show();
+    swapMatchData();
+    return;
   }
-  // setTimeout('rotateAnimation(\''+el+'\','+speed+','+degrees+')',speed);
+  setTimeout('rotateAnimation(\''+el+'\','+speed+','+degrees+')',speed);
+}
+
+function swapMatchData() {
+  $('#right-profile-image').attr("src","../images/jesse-headshot.jpg");
+  loadJesseTerms();
+  console.log(dataObj.jesse)
+  $('#right-data-image').attr("src", dataObj.jesse);
 }
