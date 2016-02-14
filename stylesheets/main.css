@@ -73,4 +73,38 @@
   .footer p {
     margin-left: 20px; }
 
+.left-profile {
+  width: 50%;
+  height: 100%;
+  border-right: solid black;
+  float: left;
+  text-align: center; }
+  .left-profile #left-profile-image {
+    float: left;
+    margin-left: 5%; }
+  .left-profile #left-data-image {
+    float: right;
+    margin-right: 5%; }
+  .left-profile #my-terms {
+    clear: both;
+    list-style-type: none;
+    font-family: Lato; }
+
+.right-profile {
+  width: 50%;
+  height: 100%;
+  border-left: solid black;
+  float: right;
+  text-align: center; }
+  .right-profile #right-profile-image {
+    float: right;
+    margin-right: 5%; }
+  .right-profile #right-data-image {
+    float: left;
+    margin-left: 5%; }
+  .right-profile #other-terms {
+    clear: both;
+    list-style-type: none;
+    font-family: Copperplate; }
+
 /*# sourceMappingURL=main.css.map */

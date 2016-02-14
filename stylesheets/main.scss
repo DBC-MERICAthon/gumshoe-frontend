@@ -3,10 +3,6 @@ $background2: #6cadd3;
 $background3: #73abcc;
 $background4: #82a7bd;
 
-* {
-	// border: 1px solid red;
-}
-
 .wrapper {
 	background-color: $background;
 	min-height: 100%;
@@ -79,8 +75,8 @@ $background4: #82a7bd;
 }
 
 #your-results {
-max-width: 50%;
-float: left;
+	max-width: 50%;
+	float: left;
 }
 
 #match-results {
@@ -88,13 +84,59 @@ float: left;
   float: right;
 }
 
-
 .footer {
-		color: white;
-	  float: right;
-    margin: 7% 15% 0px 0px;
-    text-align: right;
+	color: white;
+  float: right;
+  margin: 7% 15% 0px 0px;
+  text-align: right;
 	p {
 		margin-left: 20px;
+	}
+}
+
+
+* {
+	// border: 1px solid red;
+}
+
+.left-profile {
+	width: 50%;
+	height: 100%;
+	border-right: solid black;
+	float: left;
+	text-align: center;
+	#left-profile-image {
+		float: left;
+		margin-left: 5%;
+	}
+	#left-data-image {
+		float: right;
+		margin-right: 5%;
+	}
+	#my-terms	{
+		clear: both;
+		list-style-type: none;
+		font-family: Lato;
+	}
+}
+
+.right-profile {
+	width: 50%;
+	height: 100%;
+	border-left: solid black;
+	float: right;
+	text-align: center;
+	#right-profile-image {
+		float: right;
+		margin-right: 5%;
+	}
+	#right-data-image {
+		float: left;
+		margin-left: 5%;
+	}
+	#other-terms {
+		clear: both;
+		list-style-type: none;
+		font-family: Copperplate;
 	}
 }

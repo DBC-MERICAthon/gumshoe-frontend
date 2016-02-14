@@ -155,8 +155,8 @@ function compareBulk(){
     response.map( term => term != "https" && term != "http" && term != "com" ? c1.push(term) : term )
     fullClient.getKeywordsForText({"text": stephanie.join(" ")}, function(response){
       response.map( term => term != "https" && term != "http" && term != "com" ? c2.push(term) : term )
-      dataObj.xanTerms= c1
-      dataObj.stephTerms= c2
+      dataObj.xanTerms = c1
+      dataObj.stephTerms = c2
       fullClient.getKeywordsForText({"text": jesse.join(" ")}, function(response){
         response.map( term => term != "https" && term != "http" && term != "com" ? c3.push(term) : term )
         dataObj.jesseTerms = c3
