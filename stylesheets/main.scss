@@ -2,11 +2,16 @@ $background: #6cadd3;
 $background2: #6cadd3;
 $background3: #73abcc;
 $background4: #82a7bd;
+$nwk-image-height: 85%;
+
+html, body {
+	height: 100%;
+}
 
 .wrapper {
 	background-color: $background;
-	min-height: 100%;
-	min-width: 100%;
+	height: 100%;
+	width: 100%;
 	position: absolute;
 }
 
@@ -99,46 +104,148 @@ $background4: #82a7bd;
 	// border: 1px solid red;
 }
 
-.left-profile {
-	width: 50%;
-	height: 100%;
-	border-right: solid black;
-	float: left;
-	text-align: center;
-	#left-profile-image {
-		float: left;
-		margin-left: 5%;
-	}
-	#left-data-image {
-		float: right;
-		margin-right: 5%;
-	}
-	#my-terms	{
-		clear: both;
-		list-style-type: none;
-		font-family: Copperplate;
-		font-size: 30px;
+.logo-networking-wrapper {
+	// text-align: center;
+	position: absolute;
+	img {
+		max-width: 30%;
+		height: auto;
 	}
 }
 
-.right-profile {
-	width: 50%;
-	height: 100%;
-	border-left: solid black;
-	float: right;
-	text-align: center;
-	#right-profile-image {
-		float: right;
-		margin-right: 5%;
+@mixin networking ($side1, $side2) {
+	.profile-wrapper {
+		height: 90%;
+		width: 90%;
+		margin: auto;
+		margin-top: 5%;
+		border-radius: 30px;
+		.#{$side1}-profile {
+			background-color: #7b9095;
+			width: 47%;
+			height: 100%;
+			padding-top: 15px;
+			border-radius: 30px;
+			border: solid black;
+			border-right: solid black;
+			float: $side1;
+			text-align: center;
+			##{$side1}-profile-image-wrapper {
+				float: $side1;
+				margin-#{$side1}: 5%;
+				##{$side1}-profile-image {
+					max-width: $nwk-image-height;
+	    		height: auto;
+				}
+			}
+			##{$side1}-data-image-wrapper {
+				float: $side2;
+				margin-#{$side2}: 5%;
+				##{$side1}-data-image {
+					max-width: $nwk-image-height;
+	    		height: auto;
+				}			
+			}
+			##{$side1}-terms	{
+				clear: both;
+				list-style-type: none;
+				font-family: Copperplate;
+				font-size: 30px;
+			}
+		}
 	}
-	#right-data-image {
-		float: left;
-		margin-left: 5%;
-	}
-	#other-terms {
-		clear: both;
-		list-style-type: none;
-		font-family: Copperplate;
-		font-size: 30px;
+}
+
+// .profile-wrapper {
+// 	height: 90%;
+// 	width: 90%;
+// 	margin: auto;
+// 	margin-top: 25px;
+// 	border-radius: 30px;
+// 	.left-profile {
+// 		background-color: #7b9095;
+// 		width: 45%;
+// 		height: 100%;
+// 		padding-top: 15px;
+// 		border-radius: 30px;
+// 		border: solid black;
+// 		border-right: solid black;
+// 		float: left;
+// 		text-align: center;
+// 		#left-profile-image-wrapper {
+// 			float: left;
+// 			margin-left: 5%;
+// 			#left-profile-image {
+// 				max-width: $nwk-image-height;
+//     		height: auto;
+// 			}
+// 		}
+// 		#left-data-image-wrapper {
+// 			float: right;
+// 			margin-right: 5%;
+// 			#left-data-image {
+// 				max-width: $nwk-image-height;
+//     		height: auto;
+// 			}			
+// 		}
+// 		#left-terms	{
+// 			clear: both;
+// 			list-style-type: none;
+// 			font-family: Copperplate;
+// 			font-size: 30px;
+// 		}
+// 	}
+
+// 	.right-profile {
+// 		background-color: #7b9095;
+// 		width: 45%;
+// 		height: 100%;
+// 		padding-top: 15px;
+// 		border-radius: 30px;
+// 		border: solid black;
+// 		border-left: solid black;
+// 		float: right;
+// 		text-align: center;
+// 		#right-profile-image-wrapper {
+// 			float: right;
+// 			margin-right: 5%;
+// 			#right-profile-image {
+// 				max-width: $nwk-image-height;
+//     		height: auto;
+// 			}
+// 		}
+// 		#right-data-image-wrapper {
+// 			float: left;
+// 			margin-left: 5%;
+// 			#right-data-image {
+// 				max-width: $nwk-image-height;
+//     		height: auto;
+// 			}
+// 		}
+// 		#right-terms {
+// 			clear: both;
+// 			list-style-type: none;
+// 			font-family: Copperplate;
+// 			font-size: 30px;
+// 		}
+// 	}
+// }
+
+@include networking (left, right);
+@include networking (right, left);
+
+#center-data-image-wrapper {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	padding: 7px;
+	border-radius: 100%;
+	border: solid black;
+	background-color: #7b9095;
+	#center-data-image {
+		// max-width: $nwk-image-height;
+		// height: auto;
 	}
 }
